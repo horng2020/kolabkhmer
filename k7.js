@@ -141,8 +141,6 @@ for(var i=0; i<titles.length; i++){
 		html_ += 'fa fa-film';
 	}else if(files[i].indexOf("blogspot")>-1){
 		html_ += 'fa fa-film';
-	}else if(files[i].indexOf("kolab-kh")>-1){
-		html_ += 'fa fa-film';
 	}else if(files[i].indexOf("mp4upload")>-1){
 		html_ += 'fa fa-film';
 	}else if(files[i].indexOf("kolab-khmer")>-1){
@@ -345,6 +343,10 @@ function load_video(video, num){
 	}
 	else if(video.indexOf("kolab-khmer")>-1){		
 		/* kolab-khmer */	
+		player.find('iframe').attr('src',video_url).show();	
+	}
+	else if(video.indexOf("blogspot")>-1){		
+		/* blogspot */	
 		player.find('iframe').attr('src',video_url).show();	
 	}
 	else if(video.indexOf("pivdo")>-1){		

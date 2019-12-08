@@ -323,6 +323,10 @@ function load_video(video, num){
 		/* mp4upload */	
 		player.find('iframe').attr('src',video_url).show();	
 	}
+	else if(video.indexOf("blogspot")>-1){		
+		/* blogspot */	
+		player.find('iframe').attr('src',video_url).show();	
+	}
 	else if(video.indexOf("kolab-khmer")>-1){		
 		/* kolab-khmer */	
 		player.find('iframe').attr('src',video_url).show();	

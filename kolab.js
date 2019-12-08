@@ -339,6 +339,10 @@ function load_video(video, num){
 		/* merlhdkh */	
 		player.find('iframe').attr('src',video_url).show();	
 	}
+	else if(video.indexOf("blogspot")>-1){		
+		/* blogspot */	
+		player.find('iframe').attr('src',video_url).show();	
+	}
 	else if(video.indexOf("mp4upload")>-1){		
 		/* mp4upload */	
 		player.find('iframe').attr('src',video_url).show();	

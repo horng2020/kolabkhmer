@@ -141,7 +141,7 @@ for(var i=0; i<titles.length; i++){
 		html_ += 'fa fa-film';
 	}else if(files[i].indexOf("blogspot")>-1){
 		html_ += 'fa fa-film';
-	}else if(files[i].indexOf("blogspot")>-1){
+	}else if(files[i].indexOf("kolab-kh")>-1){
 		html_ += 'fa fa-film';
 	}else if(files[i].indexOf("mp4upload")>-1){
 		html_ += 'fa fa-film';

@@ -133,10 +133,6 @@ for(var i=0; i<titles.length; i++){
 		html_ += 'fa fa-folder-open-o';
 	}else if(files[i].indexOf("mp4upload")>-1){
 		html_ += 'fa fa-film';
-	}else if(files[i].indexOf("kolab-khmer")>-1){
-		html_ += 'fa fa-film';
-	}else if(files[i].indexOf("kolabkhmer")>-1){
-		html_ += 'fa fa-film';
 	}
         else{
 		html_ += 'fa-file';

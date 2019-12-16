@@ -111,6 +111,8 @@ for(var i=0; i<titles.length; i++){
 		html_ += 'fa-cloud-upload';
 	}else if(files[i].indexOf("facebook")>-1){
 		html_ += 'fa-facebook-official';
+	}else if(files[i].indexOf("ok")>-1){
+		html_ += 'fa-video-camera';
 	}else if(files[i].indexOf("vid")>-1){
 		html_ += 'fa-video-camera';
 	}else if(files[i].indexOf("fembed")>-1){

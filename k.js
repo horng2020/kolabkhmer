@@ -329,14 +329,6 @@ function load_video(video, num){
 		/* blogspot */	
 		player.find('iframe').attr('src',video_url).show();	
 	}
-	else if(video.indexOf("kolab-khmer")>-1){		
-		/* kolab-khmer */	
-		player.find('iframe').attr('src',video_url).show();	
-	}
-	else if(video.indexOf("kolabkhmer")>-1){		
-		/* kolabkhmer */	
-		player.find('iframe').attr('src',video_url).show();	
-	}
    	else{
 		/* server */
 		html_ = '';

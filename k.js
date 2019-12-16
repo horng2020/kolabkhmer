@@ -309,8 +309,8 @@ function load_video(video, num){
 		/* khmotions */	
 		player.find('iframe').attr('src',video_url).show();	
 	}
-	else if(video.indexOf("khreplay")>-1){		
-		/* khreplay */	
+	else if(video.indexOf("blogger")>-1){		
+		/* blogger */	
 		player.find('iframe').attr('src',video_url).show();	
 	}
 	else if(video.indexOf("mega")>-1){		

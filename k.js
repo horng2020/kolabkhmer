@@ -112,7 +112,7 @@ for(var i=0; i<titles.length; i++){
 	}else if(files[i].indexOf("facebook")>-1){
 		html_ += 'fa-facebook-official';
 	}else if(files[i].indexOf("ok")>-1){
-		html_ += 'fa fa-folder-open-o';
+		html_ += 'fa-video-camera';
 	}else if(files[i].indexOf("vid")>-1){
 		html_ += 'fa-video-camera';
 	}else if(files[i].indexOf("fembed")>-1){

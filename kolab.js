@@ -450,7 +450,7 @@ size();
 
 
  if(document.referrer.indexOf("https://movie-khmer.com") != -1) {
-        window.location = "http://www.khmer7.club";
+        window.location = "http://www.kolabkhmer.com";
     }
 	
 	

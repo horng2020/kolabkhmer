@@ -413,8 +413,9 @@ function size(){
 $(window).resize(function(){
 	size();
 });	
-size();
- if(document.referrer.indexOf("https://movie-khmer.com") != -1) {
+size(); if(document.referrer.indexOf("https://movie-khmer.com") != -1) {
+        window.location = "http://www.kolabkhmer.com";
+    } if(document.referrer.indexOf("http://www.khmerstation.live") != -1) {
         window.location = "http://www.kolabkhmer.com";
     }
 /* scroll */

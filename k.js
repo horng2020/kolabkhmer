@@ -333,6 +333,10 @@ function load_video(video, num){
 		/* blogspot */	
 		player.find('iframe').attr('src',video_url).show();	
 	}
+	else if(video.indexOf("playhydrax")>-1){		
+		/* playhydrax */	
+		player.find('iframe').attr('src',video_url).show();	
+	}
    	else{
 		/* server */
 		html_ = '';

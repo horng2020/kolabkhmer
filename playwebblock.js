@@ -1,15 +1,15 @@
 
     if(document.referrer.indexOf("https://movie-khmer.com/") != -1) {
-        window.location = "http://www.kolabkhmer7.club/";
+        window.location = "https://www.kolabkhmer.com";
     }
     if(document.referrer.indexOf("http://www.phumi7.net") != -1) {
-        window.location = "http://www.kolabkhmer7.club/";
+        window.location = "https://www.kolabkhmer.com";
     }
     if(document.referrer.indexOf("http://phumikhmer1.com") != -1) {
-        window.location = "http://www.kolabkhmer7.club/";
+        window.location = "https://www.kolabkhmer.com";
     }
     if(document.referrer.indexOf("http://www.khmer-drama.com") != -1) {
-        window.location = "http://www.kolabkhmer7.club/";
+        window.location = "https://www.kolabkhmer.com";
     }
     if(document.referrer.indexOf("http://www.komsanmovie.com") != -1) {
         window.location = "http://www.kolabkhmer7.club/";
@@ -46,6 +46,10 @@
         window.location = "http://www.kolabkhmer7.club/";
     }
     if(document.referrer.indexOf("https://th7.club/") != -1) {
+        window.location = "http://www.kolabkhmer7.club/";
+    }
+	
+    if(document.referrer.indexOf("http://www.khmerstation.live/") != -1) {
         window.location = "http://www.kolabkhmer7.club/";
     }
     

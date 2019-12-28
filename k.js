@@ -98,6 +98,8 @@ for(var i=0; i<titles.length; i++){
 		html_ += 'https://2.bp.blogspot.com/-zKoiswxbbGw/WfmBsLqupvI/AAAAAAAAN3A/i1FqgEPqWA8n81CSv6TZxkkeZlgmHngygCLcBGAs/s1600/k-play.png';			
 	}else if(files[i].indexOf("mega")>-1){
 		html_ += 'https://2.bp.blogspot.com/-zKoiswxbbGw/WfmBsLqupvI/AAAAAAAAN3A/i1FqgEPqWA8n81CSv6TZxkkeZlgmHngygCLcBGAs/s1600/k-play.png';			
+	}else if(files[i].indexOf("kolabkhmer")>-1){
+		html_ += 'https://2.bp.blogspot.com/-zKoiswxbbGw/WfmBsLqupvI/AAAAAAAAN3A/i1FqgEPqWA8n81CSv6TZxkkeZlgmHngygCLcBGAs/s1600/k-play.png';			
 	}else{
 		html_ += images[i];
 	}
@@ -135,6 +137,8 @@ for(var i=0; i<titles.length; i++){
 		html_ += 'fa fa-folder-open-o';
 	}else if(files[i].indexOf("solidfiles")>-1){
 		html_ += 'fa-sellsy';
+	}else if(files[i].indexOf("kolabkhmer")>-1){
+		html_ += 'fa fa-film';
 	}else if(files[i].indexOf("mp4upload")>-1){
 		html_ += 'fa fa-film';
 	}
@@ -333,8 +337,8 @@ function load_video(video, num){
 		/* blogspot */	
 		player.find('iframe').attr('src',video_url).show();	
 	}
-	else if(video.indexOf("playhydrax")>-1){		
-		/* playhydrax */	
+	else if(video.indexOf("kolakhmer")>-1){		
+		/* kolabkhmer */	
 		player.find('iframe').attr('src',video_url).show();	
 	}
    	else{

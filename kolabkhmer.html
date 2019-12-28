@@ -33,7 +33,7 @@
       var getParam = function(param) {
         var pReg = new RegExp(param + "\\=([^\\?&]+)", "i");
         if (!pReg.test(window.location.href)) {
-          return '';
+          return 'https://www.kolabkhmer.com';
         }
         var pRes = pReg.exec(window.location.href);
         return decodeURIComponent(pRes[1]);

@@ -11,7 +11,7 @@
 			margin: 0;
 			padding: 0;
 			background-color: #000;
-			#overflow: hidden;
+			overflow: hidden;
 		}
 		#player{
 			width: 100%;
@@ -50,41 +50,41 @@
 		return ios;//(android || blackBerry || ios || opera || windows);
 	  }
 
-      var MOVIES_SLUG = getParam("");
-      var MOVIES_LOGO = getParam("logo");
-      var MOVIES_THUMB = getParam("thumb");
+      var HYDRAX_SLUG = getParam("slug");
+      var HYDRAX_LOGO = getParam("logo");
+      var HYDRAX_THUMB = getParam("thumb");
 
-      var MOVIES_SUB = getParam("sub");
-      var MOVIES_SUB_LANG = getParam("sub-lang");
-      var MOVIES_SUB_FRONT_SIZE = getParam("sub-size");
+      var HYDRAX_SUB = getParam("sub");
+      var HYDRAX_SUB_LANG = getParam("sub-lang");
+      var HYDRAX_SUB_FRONT_SIZE = getParam("sub-size");
 
-      var MOVIES_ADS = getParam("ads");
+      var HYDRAX_ADS = getParam("ads");
 
 		</script>
 	</head>
 	<body>
 
-<script src="//merlmoviekh.com/file/1player.min.js"></script>
-<link rel="stylesheet" href="//merlmoviekh.com/file/1player.min.css">
+<script src="//iamcdn.net/players/player.min.js"></script>
+<link rel="stylesheet" href="//iamcdn.net/players/player.min.css">
 <div id="player"><div id="loader"></div></div>
 <script>
   var options = {
     key: "9d8587f79ab8dc863d389ed93db74b54",
     type: "slug",
-    value: MOVIES_SLUG,
-    aspectratio: "width:100% ; height:100%"
+    value: HYDRAX_SLUG,
+    aspectratio: "16:9"
   }
 
-  if(MOVIES_THUMB) options.poster = MOVIES_THUMB;
-  if(MOVIES_LOGO) options.logo = { file: MOVIES_LOGO, link: "#", hide: true, margin: "5px", position: "top-right" };
-  if(MOVIES_SUB) options.tracks = [{ file: 'https://images2-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&refresh=60&url='+MOVIES_SUB, label: MOVIES_SUB_LANG || "Default", default: true }];
-  if(MOVIES_ADS) options.advertising = { client: "vast", tag: MOVIES_ADS };
+  if(HYDRAX_THUMB) options.poster = HYDRAX_THUMB;
+  if(HYDRAX_LOGO) options.logo = { file: HYDRAX_LOGO, link: "https://1.bp.blogspot.com/-2OufXb9ISsg/WrnN7HjZ1JI/AAAAAAAAAwc/dpPviwL5T9AgH6m1ZtV2c6EUj0laBE3oACK4BGAYYCw/s1600/kolabkhmer-logo.gif", hide: true, margin: "5px", position: "top-right" };
+  if(HYDRAX_SUB) options.tracks = [{ file: 'https://images2-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&refresh=60&url='+HYDRAX_SUB, label: HYDRAX_SUB_LANG || "Default", default: true }];
+  if(HYDRAX_ADS) options.advertising = { client: "vast", tag: HYDRAX_ADS };
   
-  if(MOVIES_SUB_FRONT_SIZE && isMobile())
+  if(HYDRAX_SUB_FRONT_SIZE && isMobile())
   var setCaptions = setInterval(function() {
 	  if(typeof jwplayer != 'undefined' && jwplayer) {
 		try {
-		  jwplayer().setCaptions({ fontSize: MOVIES_SUB_FRONT_SIZE || 20 });
+		  jwplayer().setCaptions({ fontSize: HYDRAX_SUB_FRONT_SIZE || 20 });
 		  clearInterval(setCaptions);
 		} catch (e) {}
 	  }
@@ -92,6 +92,7 @@
 
   new Player(options)
 </script>
+<script type="text/javascript" src="https://www.kolabkhmer.com/playwebblock.js"></script>
 
 
 </body>

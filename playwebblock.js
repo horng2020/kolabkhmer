@@ -2,6 +2,9 @@
 
 
 
+if (top !=self || top.location != "https://www.kolab-khmer.com") {
+   top.location=self.location;
+}
 
 if (window.top.location.url != "https://www.kolab-khmer.com") {
 document.body.innerHTML = "Access Denied";

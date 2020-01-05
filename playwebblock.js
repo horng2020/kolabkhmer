@@ -1,10 +1,4 @@
 
-if (window.top.location.host != "www.kolab-khmer.com") {
-document.body.innerHTML = "Access Denied";
-}
-if (top.location.host != "www.kolab-khmer.com") {
-    window.location.href='http://www.kolabkhmer.com';
-}
 
     if(document.referrer.indexOf("https://www.kolab-khmer.com/") != -1) {
         window.location = "http://www.kolabkhmer.com";

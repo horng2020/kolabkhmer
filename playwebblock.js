@@ -1,8 +1,6 @@
 
 
- if(top.location != window.location) {
-    window.location = 'http://www.kolabkhmer.com';
-}
+
 
 
     if(document.referrer.indexOf("https://movie-khmer.com/") != -1) {

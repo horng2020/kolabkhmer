@@ -6,7 +6,7 @@ if (top.location.host != "www.kolab-khmer.com") {
     window.location.href='http://www.kolabkhmer.com';
 }
 
-    if(document.referrer.indexOf("https://kolab-khmer.com") != -1) {
+    if(document.referrer.indexOf("https://www.kolab-khmer.com/") != -1) {
         window.location = "http://www.kolabkhmer.com";
     }
 

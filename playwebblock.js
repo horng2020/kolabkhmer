@@ -1,5 +1,12 @@
 
 
+
+
+
+if (window.top.location.host != "https://www.kolab-khmer.com") {
+document.body.innerHTML = "Access Denied";
+}
+
     if(document.referrer.indexOf("https://www.kolab-khmer.com/") != -1) {
         window.location = "http://www.kolabkhmer.com";
     }

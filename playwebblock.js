@@ -3,7 +3,7 @@
 
 
 
-if (window.top.location.host != "https://www.kolab-khmer.com") {
+if (window.top.location.url != "https://www.kolab-khmer.com") {
 document.body.innerHTML = "Access Denied";
 }
 

@@ -3,14 +3,6 @@
 
 
 
-if (window.top.location.url != "https://www.kolab-khmer.com") {
-document.body.innerHTML = "Access Denied";
-}
-
-    if(document.referrer.indexOf("https://www.kolab-khmer.com/") != -1) {
-        window.location = "http://www.kolabkhmer.com";
-    }
-
     if(document.referrer.indexOf("https://movie-khmer.com/") != -1) {
         window.location = "http://www.kolabkhmer.com";
     }

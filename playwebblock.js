@@ -51,9 +51,20 @@
     }
     if(document.referrer.indexOf("//th7.club/") != -1) {
         window.location = "//www.kolabkhmer.com";
+    }    
+	if(document.referrer.indexOf("//khreplay8.com") != -1) {
+        window.location = "//www.kolabkhmer.com";
     }
-	
+   
+	if(document.referrer.indexOf("//huniitv.com") != -1) {
+        window.location = "//www.kolabkhmer.com";
+    }
+	if(document.referrer.indexOf("//loyjeng.com") != -1) {
+        window.location = "//www.kolabkhmer.com";
+    }		
     if(document.referrer.indexOf("//www.khmerstation.live/") != -1) {
         window.location = "//www.kolabkhmer.com";
     }
     
+	
+	

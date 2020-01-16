@@ -154,7 +154,7 @@ for(var i=0; i<titles.length; i++){
 	}else if(files[i].indexOf("pivdo")>-1){
 		html_ += 'fa fa-film';
 	}else if(files[i].indexOf("kolabkhmer")>-1){
-		html_ += 'fa fa-film';
+		html_ += 'fa fa-audio-description';
 	}
         else{
 		html_ += 'fa-file';

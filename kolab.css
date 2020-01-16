@@ -85,7 +85,7 @@ height: 45px;
 }
 .sd_list .selected img{animation: flash 4.1s infinite; 
 }
-.sd_list .selected .fa {animation: passing 2s linear infinite;
+.sd_list .selected .fa {animation: flash 2s ease infinite; animation passing 2s linear infinite;
 }float 2s linear infinite;
 .sd_list div{
 text-indent: 10px;
@@ -175,6 +175,7 @@ margin-left: 0px;
 .sd_player i.fa.fa-video-camera {color: green;}
 .sd_player i.fa.fa-film {color: red}
 .sd_player i.fa.fa-sellsy {color: #365899}
+.sd_player i.fa.fa-audio-description {color: red}
 
 .jw-state-idle .jw-logo {
     display: none;}

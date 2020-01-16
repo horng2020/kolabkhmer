@@ -138,7 +138,7 @@ for(var i=0; i<titles.length; i++){
 	}else if(files[i].indexOf("solidfiles")>-1){
 		html_ += 'fa-sellsy';
 	}else if(files[i].indexOf("kolabkhmer")>-1){
-		html_ += 'fa fa-film';
+		html_ += 'fa fa-audio-description';
 	}else if(files[i].indexOf("mp4upload")>-1){
 		html_ += 'fa fa-film';
 	}

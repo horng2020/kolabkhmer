@@ -52,14 +52,14 @@
 		return ios;//(android || blackBerry || ios || opera || windows);
 	  }
 
-      var HYDRAX_SLUG = getParam("slug");
-      var HYDRAX_LOGO = ("https://1.bp.blogspot.com/-2OufXb9ISsg/WrnN7HjZ1JI/AAAAAAAAAwc/dpPviwL5T9AgH6m1ZtV2c6EUj0laBE3oACK4BGAYYCw/s1600/kolabkhmer-logo.gif");
-      var HYDRAX_THUMB = getParam("thumb");
-      var HYDRAX_SUB = getParam("sub");
-      var HYDRAX_SUB_LANG = getParam("sub-lang");
-      var HYDRAX_SUB_FRONT_SIZE = getParam("sub-size");
+      var MOVIES_SLUG = getParam("");
+      var MOVIES_LOGO = ("https://1.bp.blogspot.com/-2OufXb9ISsg/WrnN7HjZ1JI/AAAAAAAAAwc/dpPviwL5T9AgH6m1ZtV2c6EUj0laBE3oACK4BGAYYCw/s1600/kolabkhmer-logo.gif");
+      var MOVIES_THUMB = getParam("thumb");
+      var MOVIES_SUB = getParam("sub");
+      var MOVIES_SUB_LANG = getParam("sub-lang");
+      var MOVIES_SUB_FRONT_SIZE = getParam("sub-size");
 
-      var HYDRAX_ADS = getParam("ads");
+      var MOVIES_ADS = getParam("ads");
 
 		</script>
 	</head>
@@ -72,20 +72,20 @@
   var options = {
     key: "9d8587f79ab8dc863d389ed93db74b54",
     type: "slug",
-    value: HYDRAX_SLUG,
-    aspectratio: "16:9"
+    value: MOVIES_SLUG,
+    aspectratio: "width:100% ; height:100%"
   }
 
-  if(HYDRAX_THUMB) options.poster = HYDRAX_THUMB;
-  if(HYDRAX_LOGO) options.logo = { file: HYDRAX_LOGO, link: "#", hide: true, margin: "5px", position: "bottom-right" };
-  if(HYDRAX_SUB) options.tracks = [{ file: 'https://images2-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&refresh=60&url='+HYDRAX_SUB, label: HYDRAX_SUB_LANG || "Default", default: true }];
-  if(HYDRAX_ADS) options.advertising = { client: "vast", tag: HYDRAX_ADS };
+  if(MOVIES_THUMB) options.poster = MOVIES_THUMB;
+  if(MOVIES_LOGO) options.logo = { file: MOVIES_LOGO, link: "#", hide: true, margin: "5px", position: "bottom-right" };
+  if(MOVIES_SUB) options.tracks = [{ file: 'https://images2-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&refresh=60&url='+MOVIES_SUB, label: MOVIES_SUB_LANG || "Default", default: true }];
+  if(MOVIES_ADS) options.advertising = { client: "vast", tag: MOVIES_ADS };
   
-  if(HYDRAX_SUB_FRONT_SIZE && isMobile())
+  if(MOVIES_SUB_FRONT_SIZE && isMobile())
   var setCaptions = setInterval(function() {
 	  if(typeof jwplayer != 'undefined' && jwplayer) {
 		try {
-		  jwplayer().setCaptions({ fontSize: HYDRAX_SUB_FRONT_SIZE || 20 });
+		  jwplayer().setCaptions({ fontSize: MOVIES_SUB_FRONT_SIZE || 20 });
 		  clearInterval(setCaptions);
 		} catch (e) {}
 	  }

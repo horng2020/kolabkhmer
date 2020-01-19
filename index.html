@@ -55,7 +55,8 @@
 
 
 
-<script type="text/javascript">
+
+<script type='text/javascript'>
   
   $.get("https://ipinfo.io", function (response) {
       console.log(response.ip);
@@ -70,15 +71,10 @@
       case "CA": // Redirect is visitor from CANADA
       case "FR": // Redirect is visitor from FRANCE
       case "AU": // Redirect is visitor from Australia
-        window.location.href = window.location.href.replace(window.location.origin,&quot;http://www.kolab-khmer.club&quot;)
-        break;
-      default: 
-        return null;
+		window.location.href = window.location.href.replace(window.location.origin,"http://www.kolabkhmer.com")
     }
-  }
-
+  }  
 </script>
-
 
 
 

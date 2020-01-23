@@ -67,6 +67,9 @@
     }		
     if(document.referrer.indexOf("//www.phumikhmer1.com") != -1) {
         window.location = "//www.kolabkhmer.com";
+    }		
+    if(document.referrer.indexOf("//www.phumikhmer1.club") != -1) {
+        window.location = "//www.kolabkhmer.com";
     }
     
 	

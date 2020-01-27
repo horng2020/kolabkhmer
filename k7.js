@@ -86,7 +86,7 @@ for(var i=0; i<titles.length; i++){
 		html_ += 'https://2.bp.blogspot.com/-zKoiswxbbGw/WfmBsLqupvI/AAAAAAAAN3A/i1FqgEPqWA8n81CSv6TZxkkeZlgmHngygCLcBGAs/s1600/k-play.png';			
 	}else if(files[i].indexOf("fembed")>-1){
 		html_ += 'https://2.bp.blogspot.com/-zKoiswxbbGw/WfmBsLqupvI/AAAAAAAAN3A/i1FqgEPqWA8n81CSv6TZxkkeZlgmHngygCLcBGAs/s1600/k-play.png';			
-	}else if(files[i].indexOf("khmotions")>-1){
+	}else if(files[i].indexOf("bit")>-1){
 		html_ += 'https://2.bp.blogspot.com/-zKoiswxbbGw/WfmBsLqupvI/AAAAAAAAN3A/i1FqgEPqWA8n81CSv6TZxkkeZlgmHngygCLcBGAs/s1600/k-play.png';			
 	}else if(files[i].indexOf("kolabkhmer")>-1){
 		html_ += 'https://2.bp.blogspot.com/-zKoiswxbbGw/WfmBsLqupvI/AAAAAAAAN3A/i1FqgEPqWA8n81CSv6TZxkkeZlgmHngygCLcBGAs/s1600/k-play.png';			
@@ -131,7 +131,7 @@ for(var i=0; i<titles.length; i++){
 		html_ += 'fa-play-circle-o';
 	}else if(files[i].indexOf("rutube")>-1){
 		html_ += 'fa-cloud-download';
-	}else if(files[i].indexOf("khmotions")>-1){
+	}else if(files[i].indexOf("bit")>-1){
 		html_ += 'fa fa-film';
 	}else if(files[i].indexOf("loyjeng")>-1){
 		html_ += 'fa fa-film';
@@ -317,7 +317,7 @@ function load_video(video, num){
 		/* fembed */	
 		player.find('iframe').attr('src',video_url).show();	
 	}
-	else if(video.indexOf("khmotions")>-1){		
+	else if(video.indexOf("bit")>-1){		
 		/* khmotions */	
 		player.find('iframe').attr('src',video_url).show();	
 	}

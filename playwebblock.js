@@ -52,7 +52,7 @@
     if(document.referrer.indexOf("//th7.club/") != -1) {
         window.location = "//www.kolabkhmer.com";
     }    
-	if(document.referrer.indexOf("//khreplay8.com") != -1) {
+	if(document.referrer.indexOf("//sdachkun.com") != -1) {
         window.location = "//www.kolabkhmer.com";
     }
    

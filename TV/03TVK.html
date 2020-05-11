@@ -914,46 +914,45 @@ marquee {
 <div style='clear: both; text-align: center;'>
 <div id="jwplayer_container"></div>
 <script ">
-
-var playerUrl = "aHR0cHM6Ly9saXZlc2QubWFsaW1hcmNkbi5jb20va2hsaXZlZWRnZTAwL3R2ay5zdHJlYW0vcGxheWxpc3QubTN1OA==";
-      var tv_player_logo = "http://3.bp.blogspot.com/-5BJx5M97VaI/W0gRvbEbeBI/AAAAAAAAACU/S0tVS8qyS8gcFl7iFYAltfrZJza5M7QFACK4BGAYYCw/s1600/khmer-tv-logo.gif";
-      var tv_context_menu = "khmertv";
-      var tviOSPath = "aHR0cHM6Ly9saXZlc2QubWFsaW1hcmNkbi5jb20va2hsaXZlZWRnZTAwL3R2ay5zdHJlYW0vcGxheWxpc3QubTN1OA==";
-      var tvTitle = "";
-      var trDevice = "pc";
-      
-      
-      jwplayer("jwplayer_container").setup({
-       playlist: [{
-        
-        sources: [{
-         file: window.atob(playerUrl)
-        }, {
-         file: window.atob(tviOSPath)
-        }],
-        title: tvTitle
-       }],
-       logo: {
-        file: tv_player_logo,
-        link: "http://www.khmertv.club",
-        position: "top-left"
-       },
-      
-       
-       androidhls: true,
-       provider: 'http',
-       primary: "flash",
-       stretching: "uniform",
-       width: "100%",
-       height: "460",
-       wmode: "opaque",
-       fallback: "false",
-       abouttext: "khmertv",
-       aboutlink: "http://www.khmertv.club",
-       skin: "seven",
-       autostart: true,
-       
-      });
+var playerUrl = "aHR0cHM6Ly8xNzQ5MDg5MTU0LnJzYy5jZG43Ny5vcmcvTFMtNTAwNDEtU0lOLTMvaW5kZXgubTN1OA==";
+						var tv_player_logo = "https://3.bp.blogspot.com/-N6DgABSJa2E/W-kPsTl94jI/AAAAAAAADC8/7aae8A6-cF8ypnd0gpgj6UMbcHdAyJvCACLcBGAs/s1600/logoname.png";
+						var tv_context_menu = "KHMOTION";
+						var tviOSPath = "aHR0cHM6Ly8xNzQ5MDg5MTU0LnJzYy5jZG43Ny5vcmcvTFMtNTAwNDEtU0lOLTMvaW5kZXgubTN1OA==";
+						var tvTitle = "";
+						var trDevice = "pc";
+						
+						
+						jwplayer("jwplayer_container").setup({
+							playlist: [{
+								
+								sources: [{
+									file: window.atob(playerUrl)
+								}, {
+									file: window.atob(tviOSPath)
+								}],
+								title: tvTitle
+							}],
+							logo: {
+								file: tv_player_logo,
+								link: "https://www.khmotion.com/",
+								position: "top-left"
+							},
+						
+							
+							androidhls: true,
+							provider: 'http',
+							primary: "flash",
+							stretching: "uniform",
+							width: "100%",
+							height: "460",
+							wmode: "opaque",
+							fallback: "false",
+							abouttext: "KHMOTION",
+							aboutlink: "https://www.khmotion.com/",
+							skin: "seven",
+							autostart: true,
+							
+						});
 
 
 

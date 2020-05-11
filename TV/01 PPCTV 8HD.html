@@ -912,7 +912,53 @@ marquee {
     
 <div style='clear: both; text-align: center;'>
 <div id="jwplayer_container"></div>
-<script async="async" src="https://docs.google.com/uc?id=1zhH_FT1BgLuDfX8LmFTfEIr7uk1hg6GJ&amp;export=download" type="text/javascript"></script>
+<script ">
+var playerUrl = "aHR0cHM6Ly8xOTA5MDQxNTYyLnJzYy5jZG43Ny5vcmcvTFMtNTAwNDEtU0lOLTE1L2luZGV4Lm0zdTg=";
+      var tv_player_logo = "http://3.bp.blogspot.com/-5BJx5M97VaI/W0gRvbEbeBI/AAAAAAAAACU/S0tVS8qyS8gcFl7iFYAltfrZJza5M7QFACK4BGAYYCw/s1600/khmer-tv-logo.gif";
+      var tv_context_menu = "khmertv";
+      var tviOSPath = "aHR0cHM6Ly8xOTA5MDQxNTYyLnJzYy5jZG43Ny5vcmcvTFMtNTAwNDEtU0lOLTE1L2luZGV4Lm0zdTg=";
+      var tvTitle = "";
+      var trDevice = "pc";
+      
+      
+      jwplayer("jwplayer_container").setup({
+       playlist: [{
+        
+        sources: [{
+         file: window.atob(playerUrl)
+        }, {
+         file: window.atob(tviOSPath)
+        }],
+        title: tvTitle
+       }],
+       logo: {
+        file: tv_player_logo,
+        link: "http://www.khmertv.club",
+        position: "top-left"
+       },
+      
+       
+       androidhls: true,
+       provider: 'http',
+       primary: "flash",
+       stretching: "uniform",
+       width: "100%",
+       height: "460",
+       wmode: "opaque",
+       fallback: "false",
+       abouttext: "khmertv",
+       aboutlink: "http://www.khmertv.club",
+       skin: "seven",
+       autostart: true,
+       
+      });
+
+
+
+
+
+
+</script>
 
 <!--
 
